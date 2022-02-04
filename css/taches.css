@@ -1,0 +1,25 @@
+/*ELEMENTS HTML*/
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Ubuntu Condensed', sans-serif;
+ 
+}
+
+
+#taches{
+    background-color: green;
+    padding-top: 10px;
+    margin-top: 48px;
+}
+
+h1{
+    background-color: orange;
+}
+
+.lis{
+    background-color: crimson;
+    
+}
