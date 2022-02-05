@@ -3,9 +3,62 @@ html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
     font-family: 'Ubuntu Condensed', sans-serif;
  
+}
+.dark-mode{
+    background-color: #333333;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+/*Survol des liens*/
+a:hover{
+    color: cadetblue;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+/****************NABVAR HORIZONTALR****/
+.topnav{
+    background-color: chocolate;
+    padding: 20px;    
+}
+/*chaque <a> avec la classe liens*/
+.liens{
+    padding: 10px;
+}
+/*btn burger = icone font awesome*/
+.icon{
+    display: none;
+}
+
+#toggleIcon{
+    font-size: 28px;
+}
+
+/*Le jeux*/
+#unique{
+    text-align: center;
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+.btn-game{
+    border: none;
+    background-color: cadetblue;
+    color: wheat;
+    padding: 10px;
+}
+
+.btn-game:hover{
+    color: orangered;
+    background-color: palegoldenrod;
+    cursor: pointer;
 }
 
 
@@ -22,4 +75,103 @@ h1{
 .lis{
     background-color: crimson;
     
+}
+
+.bouton-ajouter{
+    background-color: dimgray;
+    margin-bottom: 30px;
+}
+
+#liste{
+    background-color: dimgrey;
+}
+
+/************MENU A GAUCHE*********************/
+.menuClasseGauche{
+    height: 100%;
+    position:fixed;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: orange;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.menuClasseGauche a {
+    padding: 10px 10px 10px 30px;
+    font-size: 25px;
+    color: orchid;
+    display: block;
+    transition: 0.5s;
+}
+
+.menuClasseGauche .fermerBtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+/*****LDE LOADER************/
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  ul li.checked{
+    background-color: darkslategray;
+    color: white;
+    text-decoration: line-through;
+    text-align: center;
+}
+
+#input-ajouter-tache::placeholder{
+    font-size: 18px;
+    color: orange;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#input-ajouter-tache{
+    font-size: 18px;
+    color: darkslategray;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+ul li{
+    cursor: pointer;
+    transition: 0.2s;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/*Ajout input checkbox les border fabrique le symbol check*/
+ul li.checked::before {
+    content: '';
+    position: relative;
+    border-color: wheat;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 0;
+    left: 10px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 5px;
 }

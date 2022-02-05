@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/taches.css">
+    <title>connexion</title>
+</head>
+<body>
+    <nav class="topnav" id="menu"></nav>
+    <div class="menuClasseGauche" id="menuGaucheID"></div>
+    <p>
+        const email = "marine@gmail.com";
+        const password = "test";
+    </p>
+
+    <div id="loader"></div>
+
+
+    <div id="unique">
+        <h2>CONNEXION</h2>
+
+        <div class="form-element">
+            <label for="email" class="label">Email</label>
+            <input type="email" required id="email" placeholder="marine.cala@gmailcom" />
+        </div>
+
+
+        <div class="form-element">
+            <label for="password" class="label">Mot de passe</label>
+            <input  type="password" required id="password" placeholder="Mot2P@sse38000gre" />
+        </div>
+
+
+        <div class="form-element">
+            <button onclick="connexion()" class="btn-ajouter">CONNEXION</button>
+        </div>
+
+        <div id="erreurs"></div>
+
+    </div>
+
+    <script src="js/taches.js"></script>
+    <script src="js/menue.js"></script>
+    <script src="js/connexion.js"></script>
+    <script src="js/cotegauchemenue.js"></script>
+</body>
+</html>

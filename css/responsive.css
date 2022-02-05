@@ -1,0 +1,23 @@
+@media(max-width: 768px){
+    /*Quand ecran < 768px = on cache les liens <a>*/
+    .liens{
+        display: none;
+    }
+
+    /*Gace a js on ajoute la classe responsive*/
+    /*Celle ci affiche les liens <a> en verticale avec display Block*/
+    .topnav.responsive a{
+        display: block;
+        text-align: left;
+    }
+
+    /*Le btn burger est afficher ei flotte a droite en position absolue*/
+    .icon{
+        display: block!important;
+        float: right;
+        position: absolute;
+        top: 5px;
+        height: auto;
+        right: 10px;
+    }
+}

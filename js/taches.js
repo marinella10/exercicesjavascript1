@@ -63,3 +63,24 @@ function ajouterTache(){
 }
 
 
+function barrerTache(){
+    //Recuperer la liste parente <ul> par son id
+    let listeUL = document.getElementById("listeparent");
+    //test de debug
+    console.log(listeUL);
+    //on decleche un click grace a la methode addEventListener("type d'evenement", fonction anonyme auto appelée)
+    //En es6  listeUL.addEventListener("click", (event) =>{
+    //La fonction fléchée remplace function(event)
+    listeUL.addEventListener("click", function (event){
+        //Si dans <ul> il y a une balise <li>
+        if(event.target.tagName === "LI"){
+            //alert("test")
+            //On ajoute et retire la classe check a <li class="liste-taches checked">
+            event.target.classList.toggle('checked');
+        }
+    })
+}
+
+barrerTache();
+
+

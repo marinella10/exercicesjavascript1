@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/taches.css">
 </head>
 <body>
@@ -13,13 +15,18 @@
 
 <div class="menuClasseGauche" id="menuGaucheID"></div>
 
+<!--
+<span onclick="openNav()">open</span>
+
+<button id="toggle"></button> -->
+
 
 
 
     <div id="taches">
        <h1>Liste des taches</h1> 
        <input type="text" id="Liste">
-<button onclick="ajouterTache()">Ajouter</button>
+<button class="bouton-ajouter"onclick="ajouterTache()">Ajouter</button>
 
     </div>
  
@@ -28,9 +35,11 @@
 
     </ul>
 
-    
+
 
     <script src="js/taches.js"></script>
     <script src="js/menue.js"></script>
+    <script src="js/connexion.js"></script>
+    <script src="js/cotegauchemenue.js"></script>
 </body>
 </html>
