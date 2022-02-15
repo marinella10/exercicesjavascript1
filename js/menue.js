@@ -6,16 +6,16 @@ let b = 35
 //menuParent.innerHTML = "bonjour "+ a + " tu as " + b + " ans"
 
 menuParent.innerHTML = `
-<a class="liens" onclick="ouvrirMenuGauche()">
+<a class="lien" onclick="ouvrirCoteGauche()">
 <i class="fa fa-home fa-2x"></i>
 </a>
-<a class="liens" onclick="darkLightMode()">
+<a class="lien" onclick="darkLightMode()">
 <i id="toggleIcon" class="fa fa-toggle-on fa-2x" aria-hidden="true"></i>
 </a>
-<a href="#" class="liens">Accueil</a>
-<a href="taches.html" class="liens">Liste des taches</a>
-<a href="connexion.html" class="liens">page de connexion</a>
-<a href="#" class="liens">casse break</a>
+<a href="#" class="lien">Accueil</a>
+<a href="taches.html" class="lien">Liste des taches</a>
+<a href="connexion.html" class="lien">page de connexion</a>
+<a href="#" class="lien">casse break</a>
 <a href="#" class="icon" onclick="showHideMenu()">
 <i class="fa fa-bars fa-2x"></i>
 </a>
@@ -24,7 +24,8 @@ menuParent.innerHTML = `
 
 //Le clic sur le btn burger
 function showHideMenu(){
-    //Dans une variable sont stcok la fiv qui a l'id "myTopNav"
+
+   // Au moment de l'utilisation de cette function, elle va chercher dans le HTML une balise qui a un id qui s'appelle 'menu" et on la stock dans la variable let open. (modifié)
     let open = document.getElementById("menu");
     //Si cette div possède la classe top nav on ajoute la classe responsive
     if(open.className === "topnav"){
